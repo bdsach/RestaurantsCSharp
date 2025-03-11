@@ -1,0 +1,15 @@
+/Users/bandit/Development/DotNet/Restaurants/Restaurants.Application/bin/Debug/net8.0/Restaurants.Application.deps.json
+/Users/bandit/Development/DotNet/Restaurants/Restaurants.Application/bin/Debug/net8.0/Restaurants.Application.dll
+/Users/bandit/Development/DotNet/Restaurants/Restaurants.Application/bin/Debug/net8.0/Restaurants.Application.pdb
+/Users/bandit/Development/DotNet/Restaurants/Restaurants.Application/bin/Debug/net8.0/Restaurants.Domain.dll
+/Users/bandit/Development/DotNet/Restaurants/Restaurants.Application/bin/Debug/net8.0/Restaurants.Domain.pdb
+/Users/bandit/Development/DotNet/Restaurants/Restaurants.Application/obj/Debug/net8.0/Restaurants.Application.csproj.AssemblyReference.cache
+/Users/bandit/Development/DotNet/Restaurants/Restaurants.Application/obj/Debug/net8.0/Restaurants.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bandit/Development/DotNet/Restaurants/Restaurants.Application/obj/Debug/net8.0/Restaurants.Application.AssemblyInfoInputs.cache
+/Users/bandit/Development/DotNet/Restaurants/Restaurants.Application/obj/Debug/net8.0/Restaurants.Application.AssemblyInfo.cs
+/Users/bandit/Development/DotNet/Restaurants/Restaurants.Application/obj/Debug/net8.0/Restaurants.Application.csproj.CoreCompileInputs.cache
+/Users/bandit/Development/DotNet/Restaurants/Restaurants.Application/obj/Debug/net8.0/Restaura.6AB96A7C.Up2Date
+/Users/bandit/Development/DotNet/Restaurants/Restaurants.Application/obj/Debug/net8.0/Restaurants.Application.dll
+/Users/bandit/Development/DotNet/Restaurants/Restaurants.Application/obj/Debug/net8.0/refint/Restaurants.Application.dll
+/Users/bandit/Development/DotNet/Restaurants/Restaurants.Application/obj/Debug/net8.0/Restaurants.Application.pdb
+/Users/bandit/Development/DotNet/Restaurants/Restaurants.Application/obj/Debug/net8.0/ref/Restaurants.Application.dll
