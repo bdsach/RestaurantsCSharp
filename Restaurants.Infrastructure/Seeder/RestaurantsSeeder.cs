@@ -36,7 +36,7 @@ internal class RestaurantsSeeder(RestaurantsDbContext dbContext): IRestaurantsSe
                 Street = "123 Main St",
                 PostalCode = "10001"
             },
-            Dished = new List<Dish>
+            Dishes = new List<Dish>
             {
                 new Dish
                 {
@@ -66,7 +66,7 @@ internal class RestaurantsSeeder(RestaurantsDbContext dbContext): IRestaurantsSe
                 Street = "456 Oak Ave",
                 PostalCode = "60601"
             },
-            Dished = new List<Dish>
+            Dishes = new List<Dish>
             {
                 new Dish
                 {
@@ -89,7 +89,7 @@ internal class RestaurantsSeeder(RestaurantsDbContext dbContext): IRestaurantsSe
                 Street = "789 Pine St",
                 PostalCode = "94102"
             },
-            Dished = new List<Dish>
+            Dishes = new List<Dish>
             {
                 new Dish
                 {
@@ -113,7 +113,7 @@ internal class RestaurantsSeeder(RestaurantsDbContext dbContext): IRestaurantsSe
                 Street = "101 Taco Rd",
                 PostalCode = "90001"
             },
-            Dished = new List<Dish>
+            Dishes = new List<Dish>
             {
                 new Dish
                 {
@@ -136,7 +136,7 @@ internal class RestaurantsSeeder(RestaurantsDbContext dbContext): IRestaurantsSe
                 Street = "321 Olive Ln",
                 PostalCode = "33101"
             },
-            Dished = new List<Dish>
+            Dishes = new List<Dish>
             {
                 new Dish
                 {
@@ -160,7 +160,7 @@ internal class RestaurantsSeeder(RestaurantsDbContext dbContext): IRestaurantsSe
                 Street = "654 Burger Dr",
                 PostalCode = "77001"
             },
-            Dished = new List<Dish>
+            Dishes = new List<Dish>
             {
                 new Dish
                 {
@@ -183,7 +183,7 @@ internal class RestaurantsSeeder(RestaurantsDbContext dbContext): IRestaurantsSe
                 Street = "987 Cake St",
                 PostalCode = "98101"
             },
-            Dished = new List<Dish>
+            Dishes = new List<Dish>
             {
                 new Dish
                 {
@@ -207,7 +207,7 @@ internal class RestaurantsSeeder(RestaurantsDbContext dbContext): IRestaurantsSe
                 Street = "147 Sub Way",
                 PostalCode = "02108"
             },
-            Dished = new List<Dish>
+            Dishes = new List<Dish>
             {
                 new Dish
                 {
@@ -230,7 +230,7 @@ internal class RestaurantsSeeder(RestaurantsDbContext dbContext): IRestaurantsSe
                 Street = "258 Spice Rd",
                 PostalCode = "80202"
             },
-            Dished = new List<Dish>
+            Dishes = new List<Dish>
             {
                 new Dish
                 {
@@ -254,7 +254,7 @@ internal class RestaurantsSeeder(RestaurantsDbContext dbContext): IRestaurantsSe
                 Street = "369 French St",
                 PostalCode = "70112"
             },
-            Dished = new List<Dish>
+            Dishes = new List<Dish>
             {
                 new Dish
                 {

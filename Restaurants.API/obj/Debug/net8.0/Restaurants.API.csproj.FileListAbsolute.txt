@@ -109,3 +109,4 @@
 /Users/bandit/Development/DotNet/Restaurants/Restaurants.API/bin/Debug/net8.0/Restaurants.Domain.pdb
 /Users/bandit/Development/DotNet/Restaurants/Restaurants.API/obj/Debug/net8.0/Restaurants.API.csproj.AssemblyReference.cache
 /Users/bandit/Development/DotNet/Restaurants/Restaurants.API/obj/Debug/net8.0/Restaura.7AF479EB.Up2Date
+/Users/bandit/Development/DotNet/Restaurants/Restaurants.API/obj/Debug/net8.0/Restaurants.API.sourcelink.json

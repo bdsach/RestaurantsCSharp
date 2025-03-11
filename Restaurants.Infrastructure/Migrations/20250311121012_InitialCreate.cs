@@ -33,7 +33,7 @@ namespace Restaurants.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Dished",
+                name: "Dishes",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
@@ -41,13 +41,14 @@ namespace Restaurants.Infrastructure.Migrations
                     Name = table.Column<string>(type: "text", nullable: false),
                     Description = table.Column<string>(type: "text", nullable: false),
                     Price = table.Column<decimal>(type: "numeric", nullable: false),
+                    KiloCalories = table.Column<int>(type: "integer", nullable: true),
                     RestaurantId = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Dished", x => x.Id);
+                    table.PrimaryKey("PK_Dishes", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Dished_Restaurants_RestaurantId",
+                        name: "FK_Dishes_Restaurants_RestaurantId",
                         column: x => x.RestaurantId,
                         principalTable: "Restaurants",
                         principalColumn: "Id",
@@ -55,8 +56,8 @@ namespace Restaurants.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Dished_RestaurantId",
-                table: "Dished",
+                name: "IX_Dishes_RestaurantId",
+                table: "Dishes",
                 column: "RestaurantId");
         }
 
@@ -64,7 +65,7 @@ namespace Restaurants.Infrastructure.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Dished");
+                name: "Dishes");
 
             migrationBuilder.DropTable(
                 name: "Restaurants");

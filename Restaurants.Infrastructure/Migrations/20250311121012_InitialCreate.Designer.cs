@@ -12,8 +12,8 @@ using Restaurants.Infrastructure.Persistence;
 namespace Restaurants.Infrastructure.Migrations
 {
     [DbContext(typeof(RestaurantsDbContext))]
-    [Migration("20250311073523_AddKiloCalories")]
-    partial class AddKiloCalories
+    [Migration("20250311121012_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -54,7 +54,7 @@ namespace Restaurants.Infrastructure.Migrations
 
                     b.HasIndex("RestaurantId");
 
-                    b.ToTable("Dished");
+                    b.ToTable("Dishes");
                 });
 
             modelBuilder.Entity("Restaurants.Domain.Entities.Restaurant", b =>
@@ -94,7 +94,7 @@ namespace Restaurants.Infrastructure.Migrations
             modelBuilder.Entity("Restaurants.Domain.Entities.Dish", b =>
                 {
                     b.HasOne("Restaurants.Domain.Entities.Restaurant", null)
-                        .WithMany("Dished")
+                        .WithMany("Dishes")
                         .HasForeignKey("RestaurantId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -129,7 +129,7 @@ namespace Restaurants.Infrastructure.Migrations
 
             modelBuilder.Entity("Restaurants.Domain.Entities.Restaurant", b =>
                 {
-                    b.Navigation("Dished");
+                    b.Navigation("Dishes");
                 });
 #pragma warning restore 612, 618
         }

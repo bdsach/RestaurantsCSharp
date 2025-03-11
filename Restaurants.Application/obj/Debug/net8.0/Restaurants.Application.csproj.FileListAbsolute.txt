@@ -13,3 +13,4 @@
 /Users/bandit/Development/DotNet/Restaurants/Restaurants.Application/obj/Debug/net8.0/refint/Restaurants.Application.dll
 /Users/bandit/Development/DotNet/Restaurants/Restaurants.Application/obj/Debug/net8.0/Restaurants.Application.pdb
 /Users/bandit/Development/DotNet/Restaurants/Restaurants.Application/obj/Debug/net8.0/ref/Restaurants.Application.dll
+/Users/bandit/Development/DotNet/Restaurants/Restaurants.Application/obj/Debug/net8.0/Restaurants.Application.sourcelink.json

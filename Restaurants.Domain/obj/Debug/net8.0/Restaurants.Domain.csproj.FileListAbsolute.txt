@@ -9,3 +9,4 @@
 /Users/bandit/Development/DotNet/Restaurants/Restaurants.Domain/obj/Debug/net8.0/refint/Restaurants.Domain.dll
 /Users/bandit/Development/DotNet/Restaurants/Restaurants.Domain/obj/Debug/net8.0/Restaurants.Domain.pdb
 /Users/bandit/Development/DotNet/Restaurants/Restaurants.Domain/obj/Debug/net8.0/ref/Restaurants.Domain.dll
+/Users/bandit/Development/DotNet/Restaurants/Restaurants.Domain/obj/Debug/net8.0/Restaurants.Domain.sourcelink.json

@@ -17,3 +17,4 @@
 /Users/bandit/Development/DotNet/Restaurants/Restaurants.Infrastructure/obj/Debug/net8.0/Restaurants.Infrastructure.pdb
 /Users/bandit/Development/DotNet/Restaurants/Restaurants.Infrastructure/obj/Debug/net8.0/Restaurants.Infrastructure.genruntimeconfig.cache
 /Users/bandit/Development/DotNet/Restaurants/Restaurants.Infrastructure/obj/Debug/net8.0/ref/Restaurants.Infrastructure.dll
+/Users/bandit/Development/DotNet/Restaurants/Restaurants.Infrastructure/obj/Debug/net8.0/Restaurants.Infrastructure.sourcelink.json

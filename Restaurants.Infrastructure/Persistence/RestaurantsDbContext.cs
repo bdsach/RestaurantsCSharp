@@ -6,7 +6,7 @@ internal class RestaurantsDbContext(DbContextOptions<RestaurantsDbContext> optio
 {
 
     internal DbSet<Restaurant> Restaurants { get; set; }
-    internal DbSet<Dish> Dished { get; set; }
+    internal DbSet<Dish> Dishes { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -16,7 +16,7 @@ internal class RestaurantsDbContext(DbContextOptions<RestaurantsDbContext> optio
             .OwnsOne(r => r.Address);
 
         modelBuilder.Entity<Restaurant>()
-            .HasMany(r => r.Dished)
+            .HasMany(r => r.Dishes)
             .WithOne()
             .HasForeignKey(d => d.RestaurantId);
     }
