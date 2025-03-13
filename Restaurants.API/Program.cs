@@ -7,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
+builder.Services.AddSwaggerGen();
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
 builder.Host.UseSerilog((context, configuration) =>
@@ -20,9 +21,11 @@ var seeder = scope.ServiceProvider.GetRequiredService<IRestaurantsSeeder>();
 
 await seeder.Seed();
 
+// Configure the HTTP request pipeline.
 app.UseSerilogRequestLogging();
 
-// Configure the HTTP request pipeline.
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
 
