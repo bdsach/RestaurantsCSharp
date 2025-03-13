@@ -41,7 +41,7 @@ public class Restaurants(IMediator mediator) : ControllerBase
     {
         command.Id = id;
         await mediator.Send(command);
-        return NotFound();
+        return NoContent();
     }
 
     [HttpDelete("{id}")]
@@ -50,6 +50,6 @@ public class Restaurants(IMediator mediator) : ControllerBase
     public async Task<IActionResult> DeleteRestaurant([FromRoute] int id)
     {
         await mediator.Send(new DeleteRestaurantCommand(id));
-        return NotFound();
+        return NoContent();
     }
 }
