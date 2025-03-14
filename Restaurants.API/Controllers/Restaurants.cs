@@ -13,7 +13,7 @@ using Restaurants.Infrastructure.Authorization;
 namespace Restaurants.API.Controllers;
 
 [ApiController]
-// [Authorize]
+[Authorize]
 [Route("api/restaurants")]
 public class Restaurants(IMediator mediator) : ControllerBase
 {
@@ -26,7 +26,8 @@ public class Restaurants(IMediator mediator) : ControllerBase
     }
 
     [HttpGet("{id}")]
-    [Authorize(Policy = PolicyNames.HasNationality)]
+    // [Authorize(Policy = PolicyNames.HasNationality)]
+    // [Authorize(Policy = PolicyNames.AtLeast20)]
     public async Task<IActionResult> GetById([FromRoute] int id)
     {
         var restaurant = await mediator.Send(new GetRestaurantByIdQuery(id));
