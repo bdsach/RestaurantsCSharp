@@ -8,6 +8,7 @@ using Restaurants.Application.Restaurants.Queries.GetAllRestaurants;
 using Restaurants.Application.Restaurants.Queries.GetRestaurantById;
 using Microsoft.AspNetCore.Authorization;
 using Restaurants.Domain.Constants;
+using Restaurants.Infrastructure.Authorization;
 
 namespace Restaurants.API.Controllers;
 
@@ -25,9 +26,9 @@ public class Restaurants(IMediator mediator) : ControllerBase
     }
 
     [HttpGet("{id}")]
+    [Authorize(Policy = PolicyNames.HasNationality)]
     public async Task<IActionResult> GetById([FromRoute] int id)
     {
-        var userId = User.Claims.FirstOrDefault(c => c.Type == "<id claim type>")!.Value;
         var restaurant = await mediator.Send(new GetRestaurantByIdQuery(id));
         return Ok(restaurant);
     }
