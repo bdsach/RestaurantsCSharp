@@ -7,11 +7,12 @@ using Restaurants.Application.Restaurants.Commands.UpdateRestaurantCommand;
 using Restaurants.Application.Restaurants.Queries.GetAllRestaurants;
 using Restaurants.Application.Restaurants.Queries.GetRestaurantById;
 using Microsoft.AspNetCore.Authorization;
+using Restaurants.Domain.Constants;
 
 namespace Restaurants.API.Controllers;
 
 [ApiController]
-[Authorize]
+// [Authorize]
 [Route("api/restaurants")]
 public class Restaurants(IMediator mediator) : ControllerBase
 {
@@ -32,6 +33,7 @@ public class Restaurants(IMediator mediator) : ControllerBase
     }
 
     [HttpPost]
+    [Authorize(Roles = UserRoles.Owner)]
     public async Task<IActionResult> CreateRestaurant([FromBody] CreateRestaurantCommand command)
     {
         int id = await mediator.Send(command);
