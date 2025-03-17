@@ -17,6 +17,13 @@ public class ErrorHandlingMiddleware(ILogger<ErrorHandlingMiddleware> logger) : 
 
             logger.LogWarning(notfound.Message);
         }
+        catch (ForbiddenException forbidden)
+        {
+            context.Response.StatusCode = StatusCodes.Status403Forbidden;
+            await context.Response.WriteAsync(forbidden.Message);
+
+            logger.LogWarning(forbidden.Message);
+        }
         catch (Exception ex)
         {
             logger.LogError(ex, ex.Message);

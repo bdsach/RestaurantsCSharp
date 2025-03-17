@@ -7,6 +7,7 @@ namespace Restaurants.Infrastructure.Seeder;
 
 internal class RestaurantsSeeder(RestaurantsDbContext dbContext) : IRestaurantsSeeder
 {
+    private readonly string CurrentOwnerId = "3218667c-920d-40f5-91a8-a0eae3672172";
     public async Task Seed()
     {
         if (await dbContext.Database.CanConnectAsync())
@@ -60,6 +61,7 @@ internal class RestaurantsSeeder(RestaurantsDbContext dbContext) : IRestaurantsS
             ContactEmail = "contact@kfc.com",
             ContactNumber = "123-456-7890",
             HasDelivery = true,
+            OwnerId = CurrentOwnerId,
             Address = new Address
             {
                 City = "New York",
@@ -90,6 +92,7 @@ internal class RestaurantsSeeder(RestaurantsDbContext dbContext) : IRestaurantsS
             ContactEmail = "info@pizzahut.com",
             ContactNumber = "987-654-3210",
             HasDelivery = true,
+            OwnerId = CurrentOwnerId,
             Address = new Address
             {
                 City = "Chicago",
@@ -113,6 +116,7 @@ internal class RestaurantsSeeder(RestaurantsDbContext dbContext) : IRestaurantsS
             Description = "Authentic Japanese sushi and sashimi.",
             ContactEmail = "sushizen@email.com",
             HasDelivery = false,
+            OwnerId = CurrentOwnerId,
             Address = new Address
             {
                 City = "San Francisco",
@@ -137,6 +141,7 @@ internal class RestaurantsSeeder(RestaurantsDbContext dbContext) : IRestaurantsS
             ContactEmail = "tacobell@support.com",
             ContactNumber = "555-123-4567",
             HasDelivery = true,
+            OwnerId = CurrentOwnerId,
             Address = new Address
             {
                 City = "Los Angeles",
@@ -160,6 +165,7 @@ internal class RestaurantsSeeder(RestaurantsDbContext dbContext) : IRestaurantsS
             Description = "Family-friendly Italian dining.",
             ContactEmail = "olivegarden@contact.com",
             HasDelivery = false,
+            OwnerId = CurrentOwnerId,
             Address = new Address
             {
                 City = "Miami",
@@ -184,6 +190,7 @@ internal class RestaurantsSeeder(RestaurantsDbContext dbContext) : IRestaurantsS
             ContactEmail = "bk@support.com",
             ContactNumber = "444-555-6666",
             HasDelivery = true,
+            OwnerId = CurrentOwnerId,
             Address = new Address
             {
                 City = "Houston",
@@ -207,6 +214,7 @@ internal class RestaurantsSeeder(RestaurantsDbContext dbContext) : IRestaurantsS
             Description = "Extensive menu with signature cheesecakes.",
             ContactEmail = "info@cheesecakefactory.com",
             HasDelivery = false,
+            OwnerId = CurrentOwnerId,
             Address = new Address
             {
                 City = "Seattle",
@@ -231,6 +239,7 @@ internal class RestaurantsSeeder(RestaurantsDbContext dbContext) : IRestaurantsS
             ContactEmail = "subway@contact.com",
             ContactNumber = "333-222-1111",
             HasDelivery = true,
+            OwnerId = CurrentOwnerId,
             Address = new Address
             {
                 City = "Boston",
@@ -254,6 +263,7 @@ internal class RestaurantsSeeder(RestaurantsDbContext dbContext) : IRestaurantsS
             Description = "Spicy and flavorful Thai cuisine.",
             ContactEmail = "thaispice@email.com",
             HasDelivery = true,
+            OwnerId = CurrentOwnerId,
             Address = new Address
             {
                 City = "Denver",
@@ -278,6 +288,7 @@ internal class RestaurantsSeeder(RestaurantsDbContext dbContext) : IRestaurantsS
             ContactEmail = "lebistro@french.com",
             ContactNumber = "777-888-9999",
             HasDelivery = false,
+            OwnerId = CurrentOwnerId,
             Address = new Address
             {
                 City = "New Orleans",
